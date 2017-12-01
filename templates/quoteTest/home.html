@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Nice Quotes</title>
 </head>
 <body>
     <h1>List of quotes</h1>
     {% block content %}
         {% for Quote in quote_list %}
-            {{ Quote.aQuote }}
-            {{ Quote.aQuoter }}
-        {% end for %}
+            <p>{{ Quote.aQuote }}</p>
+            <p><i>{{ Quote.aQuoter }}</i></p>
+            <hr>
+        {% endfor %}
     {% endblock %}
 </body>
 </html>
